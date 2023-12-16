@@ -68,6 +68,6 @@ Otros archivos de configuración y recursos. <br>
 Tomás Rafael Caratti <br>
 
 ### Licencia <br>
-Este proyecto está bajo la Licencia <a href="[License.txt](https://github.com/TomiCaratti13/IntegradorJava_CodoaCodo/blob/main/MIT%20License.txt)">MIT</a>. <br><br>
+Este proyecto está bajo la Licencia <a href="https://github.com/TomiCaratti13/IntegradorJava_CodoaCodo/blob/main/MIT%20License.txt">MIT</a>. <br><br>
 
 #### ¡Gracias por usar nuestro sistema de gestión de oradores! Si tienes alguna pregunta o problema, no dudes en contactarnos.
