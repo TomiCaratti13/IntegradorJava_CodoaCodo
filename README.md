@@ -1,65 +1,73 @@
-
-# README
-## Sistema de Gestión de Oradores
-### Codo a Codo - Integrador Java
-
->!Note
+## Codo a Codo - Integrador Java
+# Sistema de Gestión de Oradores
+### README
+ <br>
+ 
+> [!Note]
 > Este es un sistema de gestión de oradores desarrollado en Java utilizando la interfaz gráfica de usuario (GUI) Swing. El sistema permite realizar operaciones básicas de CRUD (Crear, Leer, Actualizar y Eliminar) sobre la información de los oradores almacenada en una base de datos.
 
-Requisitos Previos
-Java Development Kit (JDK) instalado
-MySQL Server instalado y configurado
-IDE de Java (por ejemplo, IntelliJ IDEA, Eclipse) para ejecutar el código
-Configuración de la Base de Datos
-Asegúrate de tener una base de datos MySQL creada con el nombre "nombre_de_tu_base_de_datos" y la siguiente tabla:
+> [!Tip]
+> ### Requisitos Previos <br>
+> &ensp;Java Development Kit (JDK) instalado <br>
+> &ensp;MySQL Server instalado y configurado <br>
+> &ensp;IDE de Java (por ejemplo, IntelliJ IDEA, Eclipse) para ejecutar el código <br>
+> &ensp;Configuración de la Base de Datos <br>
+> &ensp;Asegúrate de tener una base de datos MySQL creada con el nombre "nombre_de_tu_base_de_datos" y la siguiente tabla:
 
-sql
-Copy code
-CREATE TABLE oradores (
-    id_orador INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(255) NOT NULL,
-    apellido VARCHAR(255) NOT NULL,
-    mail VARCHAR(255) NOT NULL,
-    tema VARCHAR(255) NOT NULL,
-    fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-Configuración de Conexión a la Base de Datos
+### Copie el código SQL: <br>
+CREATE TABLE oradores ( <br>
+&emsp;&emsp; id_orador INT AUTO_INCREMENT PRIMARY KEY, <br>
+&emsp;&emsp; nombre VARCHAR(255) NOT NULL, <br>
+&emsp;&emsp; apellido VARCHAR(255) NOT NULL, <br>
+&emsp;&emsp; mail VARCHAR(255) NOT NULL, <br>
+&emsp;&emsp; tema VARCHAR(255) NOT NULL, <br>
+&emsp;&emsp; fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAMP <br>
+); <br><br>
+
+>[!Important]
+>Configuración de Conexión a la Base de Datos
 En el archivo DBConnection.java, asegúrate de modificar la URL, usuario y contraseña de la conexión a tu base de datos:
 
-java
-Copy code
-private static final String URL = "jdbc:mysql://localhost:3306/nombre_de_tu_base_de_datos";
-private static final String USER = "tu_usuario";
-private static final String PASSWORD = "tu_contraseña";
-Ejecución del Programa
-Abre el proyecto en tu IDE de Java.
-Asegúrate de tener configurada la conexión a la base de datos.
-Ejecuta la clase FormOradores.java.
-Crear Archivo JAR
-En tu IDE, busca la opción para construir o exportar el proyecto como un archivo JAR ejecutable.
-Configura la clase principal como Vista.FormOradores.
-Guarda el archivo JAR en la carpeta dist del proyecto.
-Ejecutar desde el Archivo JAR
-Abre una terminal o símbolo del sistema.
-Navega hasta la carpeta dist del proyecto.
-Ejecuta el siguiente comando:
-bash
-Copy code
-java -jar NombreDelArchivo.jar
-Funcionalidades Principales
-Agregar Orador: Ingresa los detalles del orador y haz clic en "Agregar".
-Modificar Orador: Selecciona un orador de la tabla, realiza las modificaciones y haz clic en "Actualizar".
-Eliminar Orador: Selecciona un orador de la tabla y haz clic en "Eliminar".
-Listar Oradores: Muestra la información de todos los oradores en la tabla.
-Generar XML: Crea un archivo XML (Oradores.xml) con la información de los oradores.
-Estructura del Proyecto
-Vista/FormOradores.java: Contiene la lógica principal y la interfaz gráfica.
-Vista/DBConnection.java: Maneja la conexión a la base de datos.
-Otros archivos de configuración y recursos.
-Autor
-Nombre del Autor
+### Copie el código JAVA: <br>
+&emsp; private static final String URL = "jdbc:mysql://localhost:3306/nombre_de_tu_base_de_datos"; <br>
+&emsp; private static final String USER = "tu_usuario"; <br>
+&emsp; private static final String PASSWORD = "tu_contraseña";
+<br>
+### Ejecución del Programa <br>
+Abre el proyecto en tu IDE de Java. <br>
+Asegúrate de tener configurada la conexión a la base de datos. <br>
+Ejecuta la clase FormOradores.java. <br>
 
-Licencia
-Este proyecto está bajo la Licencia MIT.
+### Crear Archivo JAR <br>
+En tu IDE, busca la opción para construir o exportar el proyecto como un archivo JAR ejecutable. <br>
+Configura la clase principal como Vista.FormOradores. <br>
+Guarda el archivo JAR en la carpeta dist del proyecto. <br>
+Ejecutar desde el Archivo JAR <br>
+Abre una terminal o símbolo del sistema. <br>
+Navega hasta la carpeta dist del proyecto. <br>
+Ejecuta el siguiente comando: <br>
+> [!Warning]
+> ### Copie el código en la TERMINAL: <br>
+> &emsp; java -jar TP_Final_CaC_Java.jar <br>
 
-¡Gracias por usar nuestro sistema de gestión de oradores! Si tienes alguna pregunta o problema, no dudes en contactarnos.
+<br>
+
+### Funcionalidades Principales <br>
+<b>Agregar Orador:</b> Ingresa los detalles del orador y haz clic en "Agregar". <br>
+<b>Modificar Orador:</b> Selecciona un orador de la tabla, realiza las modificaciones y haz clic en "Actualizar". <br>
+<b>Eliminar Orador:</b> Selecciona un orador de la tabla y haz clic en "Eliminar". <br>
+<b>Listar Oradores:</b> Muestra la información de todos los oradores en la tabla. <br>
+<b>Generar XML:</b> Crea un archivo XML (Oradores.xml) con la información de los oradores. <br>
+
+### Estructura del Proyecto <br>
+Vista/FormOradores.java: Contiene la lógica principal y la interfaz gráfica. <br>
+Vista/DBConnection.java: Maneja la conexión a la base de datos. <br>
+Otros archivos de configuración y recursos. <br>
+
+### Autor <br>
+Tomás Rafael Caratti <br>
+
+### Licencia <br>
+Este proyecto está bajo la Licencia <a href="https://github.com/TomiCaratti13/IntegradorJava_CodoaCodo/blob/main/MIT%20License.txt">MIT</a>. <br><br>
+
+#### ¡Gracias por usar nuestro sistema de gestión de oradores! Si tienes alguna pregunta o problema, no dudes en contactarnos.
